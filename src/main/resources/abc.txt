@@ -1,0 +1,6 @@
+This is tutorial for reading text file
+using 
+1. FileReader
+2. FileInputStream
+3. BufferedReader
+4. Scanner
