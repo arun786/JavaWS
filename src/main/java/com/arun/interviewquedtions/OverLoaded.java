@@ -7,14 +7,14 @@ public class OverLoaded {
 	 * shares same name with difference in number of arguments or difference in
 	 * type of arguments, return type not included, it is also called as static
 	 * binding because the compiler checks method overloading at compile time
-	 * and because of this it is faster
+	 * and because of this it is faster, we can overload a final, static and private method
 	 */
 
 	public static void main(String[] args) {
 
 	}
 
-	public void getDescription() {
+	public static void getDescription() {
 
 	}
 
@@ -35,6 +35,13 @@ public class OverLoaded {
 	 */
 	/*
 	 * public int getDescription() { return 1; }
+	 */
+	
+	/*the below method is not allowed*/
+	/*
+	 * public void getDescription(String address){
+	 * 
+	 * }
 	 */
 
 }
