@@ -15,7 +15,7 @@ public class FibonacciSeries {
 		int sum = 1;
 		int previousSum = 0;
 		System.out.print(previousSum + " " + sum + " ");
-		while (firstXnumber < till) {
+		while (firstXnumber < till - 2) {
 			int temp = sum;
 			sum = sum + previousSum;
 			previousSum = temp;
