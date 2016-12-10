@@ -8,7 +8,7 @@ public class FibonacciSeries {
 
 	public static void main(String[] args) {
 		int firstXnumber = 0;
-		System.out.println("Give first X fibonacci series");
+		System.out.println("Give first X fibonacci series. Enter X..");
 		Scanner scan = new Scanner(System.in);
 		int till = scan.nextInt();
 		System.out.println();
