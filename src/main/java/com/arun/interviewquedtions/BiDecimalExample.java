@@ -24,13 +24,21 @@ public class BiDecimalExample {
 		 * o/p will be the difference will be as 1.01, its better to use
 		 * Bigdecimal
 		 */
-		
-		/*But if we use overloaded constructor for BigDecimal, we will have the same problem*/
-		
+
+		/*
+		 * But if we use overloaded constructor for BigDecimal, we will have the
+		 * same problem
+		 */
+
 		BigDecimal amount5 = new BigDecimal(4.15);
 		BigDecimal amount6 = new BigDecimal(5.16);
-		
+
 		System.out.println("the difference will be as " + amount6.subtract(amount5));
+
+		/*
+		 * o/p will be the difference will be as
+		 * 1.0099999999999997868371792719699442386627197265625
+		 */
 	}
 
 }
