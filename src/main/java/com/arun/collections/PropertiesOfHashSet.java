@@ -59,17 +59,11 @@ public class PropertiesOfHashSet {
 			String element = setIterator.next();
 			if(element.equals("Arun")){
 				setIterator.remove();
+				//notOrderedHashSet.remove(element); //This will not work, concurrent modification exception
 			}
 		}
 		
-		System.out.println(notOrderedHashSet);
-		
-		
-		
-		
-		
-		
-		
+		System.out.println(notOrderedHashSet);		
 		
 	}
 
