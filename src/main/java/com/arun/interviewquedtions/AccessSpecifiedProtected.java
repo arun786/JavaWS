@@ -18,3 +18,10 @@ public class AccessSpecifiedProtected extends Test {
 class Test {
 	protected int a = 10;
 }
+
+class Test1 extends com.arun.Generics.AccessSpecifiedProtected {
+	public void canProtectedAccess() {
+		System.out.println(a);
+		/* a is from different package and if protected can be accessible */
+	}
+}
