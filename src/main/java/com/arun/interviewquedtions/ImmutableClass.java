@@ -9,8 +9,9 @@ public final class ImmutableClass {
 	 * 
 	 * ways of making a class final
 	 * 
-	 * 1. class is made final so that it can be inherited 2. All the variables
-	 * are final 3. No setters
+	 * 1. class is made final so that it cannot be inherited 
+	 * 2. All the variables are final 
+	 * 3. No setters
 	 */
 
 	private final String id;
