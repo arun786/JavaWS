@@ -49,3 +49,11 @@ class Runner implements Runnable {
 	}
 
 }
+
+/*o/p will be 
+
+Service CacheService is up
+Service ValidationService is up
+Service AlertService is up
+Since all the services are up..we can start the main application....*/
+
