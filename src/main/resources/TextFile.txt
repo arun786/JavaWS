@@ -1,0 +1,2 @@
+HashSet uses compareTo to check if two elements are equal.
+TreeSet uses equals to check if two elements are equal.
