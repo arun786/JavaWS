@@ -35,7 +35,6 @@ public class SortingAMapBasedOnVlaue {
 		}
 		
 		System.out.println(sortedMap);
-
 	}
 
 }
