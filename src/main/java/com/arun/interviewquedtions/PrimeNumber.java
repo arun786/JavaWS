@@ -15,8 +15,10 @@ public class PrimeNumber {
 		if (number % 2 == 0) {
 			return false;
 		}
+		
+		int sqrt = (int) Math.sqrt(number);
 
-		for (int i = 3; i * i <= number; i = i + 2) {
+		for (int i = 3; i <= sqrt; i = i + 2) {
 			if (number % i == 0) {
 				return false;
 			}
