@@ -23,8 +23,7 @@ public class CompareToNotConsistentWithEquals {
 		System.out.println(s1.compareTo(s2)); // -1
 		System.out.println(s1.equals(s2)); // false
 
-		Set<BigDecimal> h1 = new HashSet<>(); // it uses compareTo to find
-												// duplicates.
+		Set<BigDecimal> h1 = new HashSet<>(); // it uses compareTo to find duplicates.
 		h1.add(b1);
 		h1.add(b2);
 
@@ -32,8 +31,7 @@ public class CompareToNotConsistentWithEquals {
 
 		System.out.println(h1);
 
-		Set<BigDecimal> t1 = new TreeSet<>(); // It uses equals to find
-												// duplicates
+		Set<BigDecimal> t1 = new TreeSet<>(); // It uses equals to find duplicates
 		t1.add(b1);
 		t1.add(b2);
 
