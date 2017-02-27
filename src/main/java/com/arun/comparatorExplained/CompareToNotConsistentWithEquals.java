@@ -44,15 +44,18 @@ public class CompareToNotConsistentWithEquals {
 		Student st1 = new Student("Arun", "12");
 		Student st2 = new Student("Arun", "13");
 		Student st3 = new Student("Arun","11");
+		Student st4 = new Student("Adwiti","14");
 		
 		List<Student> lst = new ArrayList<>();
 		lst.add(st1);
 		lst.add(st2);
 		lst.add(st3);
+		lst.add(st4);
 		
 		Collections.sort(lst);
 		System.out.println(lst);
-		System.out.println(st2.compareTo(st1));
+		System.out.println(st2.compareTo(st1)); 
+		/*o/p will be [Student [name=Adwiti, age=14], Student [name=Arun, age=11], Student [name=Arun, age=12], Student [name=Arun, age=13]]*/
 		
 		
 
