@@ -22,12 +22,16 @@ public class NumberInWords {
 		int number = scan.nextInt();
 		if (number < 10 && number > 0) {
 			System.out.println(unit.values()[number - 1]);
-		}else if(number >9 && number <20){
-			System.out.println(spnum.values()[number -10]);
-		}else if(number > 19 && number <100){
+		} else if (number > 9 && number < 20) {
+			System.out.println(spnum.values()[number - 10]);
+		} else if (number > 19 && number < 100) {
 			int unit_placeholder = number % 10;
-			int ten_placeholder = (number - unit_placeholder)/10;
-			System.out.println(tens.values()[ten_placeholder - 2] + " " + unit.values()[unit_placeholder -1]);
+			if (unit_placeholder == 0) {
+				System.out.println(tens.values()[number / 10 - 2]);
+			} else {
+				int ten_placeholder = (number - unit_placeholder) / 10;
+				System.out.println(tens.values()[ten_placeholder - 2] + " " + unit.values()[unit_placeholder - 1]);
+			}
 		}
 	}
 
