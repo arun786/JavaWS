@@ -3,6 +3,7 @@
  */
 package Generics;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -11,6 +12,14 @@ import java.util.List;
  *
  */
 public class BoxingAndUnboxing {
+	
+	public void exampleOfAutoboxing(){
+		List<Integer> lst = new ArrayList<Integer>();
+		lst.add(1); //autoboxing - primitive to object
+		lst.add(2); //autoboxing
+		
+		int firstValue = lst.get(0); //unboxing, converting Object to int
+	}
 
 	/*
 	 * Here we define List as Integer but while iterating we use int. This is
