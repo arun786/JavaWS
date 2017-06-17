@@ -37,7 +37,7 @@ public class SerializationConcepts {
 
 		/* you need to flush to write the object */
 		oos.flush();
-
+		oos.close();
 		System.out.println("Objects has been written to file in stream format");
 	}
 }
@@ -106,6 +106,24 @@ class Cricketer implements Serializable {
 	 */
 	public void setScore(Integer score) {
 		this.score = score;
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Cricketer [id=");
+		builder.append(id);
+		builder.append(", name=");
+		builder.append(name);
+		builder.append(", score=");
+		builder.append(score);
+		builder.append("]");
+		return builder.toString();
 	}
 
 }
