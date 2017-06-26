@@ -18,18 +18,26 @@ public class Anagram {
 
 	public static boolean isAnagram(String firstWord, String secondWord) {
 		boolean flag = false;
+		String space = " ";
 		if (firstWord.length() == secondWord.length()) {
 			for (int i = 0; i < firstWord.length(); i++) {
 				flag = false;
 				for (int j = 0; j < secondWord.length(); j++) {
-					if (firstWord.charAt(i) == secondWord.charAt(j)) {
+					if (firstWord.toLowerCase().charAt(i) == secondWord.toLowerCase().charAt(j)) {
 						flag = true;
+						if (j == 0) {
+							secondWord = secondWord.substring(j + 1);
+						}else{
+							secondWord = secondWord.substring(0, j) +  secondWord.substring(j+1);
+						}
+						break;
 					}
 				}
 				if (flag == false) {
 					return flag;
 				}
 			}
+
 			return flag;
 		} else {
 			return false;
